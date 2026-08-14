@@ -12,17 +12,54 @@
   </head>
 
   <body class="bg-white text-stone-900">
+    <header class="border-b border-stone-200 bg-stone-50">
+      <nav aria-label="Principal" class="mx-auto max-w-6xl px-4 py-4">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center justify-between gap-4">
+            <a class="text-xl font-semibold tracking-[0.2em] text-stone-900 uppercase" href="index.html">Verline</a>
+            <a class="text-sm text-stone-600 underline underline-offset-4 md:hidden" href="index.html">Inicio</a>
+          </div>
+          <div class="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
+            <form action="#" method="get" class="w-full md:w-80">
+              <label class="sr-only" for="site-search">Buscar en Verline</label>
+              <input class="w-full rounded-full border border-stone-200 bg-white px-4 py-2 text-sm text-stone-900 placeholder:text-stone-500 focus:border-stone-400 focus:outline-none" id="site-search" name="q" placeholder="Buscar productos" type="search">
+            </form>
+            <a class="text-sm font-medium text-stone-700 underline underline-offset-4" href="index.html">Cuenta</a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="mx-auto max-w-3xl px-4 py-12">
       <h1 class="text-2xl font-bold sm:text-3xl">Vista de producto</h1>
-
-      <nav aria-label="Navegación provisional entre vistas" class="mt-8">
-        <ul class="space-y-2">
-          <li><a class="underline" href="index.html">Inicio</a></li>
-          <li><a class="underline" href="catalogo.html">Catálogo</a></li>
-          <li><a class="underline" href="carrito.html">Carrito</a></li>
-          <li><a class="underline" href="pago.html">Pago</a></li>
-        </ul>
-      </nav>
     </main>
+    <footer class="border-t border-stone-200 bg-stone-50">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-stone-900">Categorías</h2>
+          <ul class="mt-4 space-y-2 text-sm text-stone-600">
+            <li><a class="hover:text-stone-900" href="catalogo.html">Calzado</a></li>
+            <li><a class="hover:text-stone-900" href="catalogo.html">Camisas</a></li>
+            <li><a class="hover:text-stone-900" href="catalogo.html">Pantalones</a></li>
+            <li><a class="hover:text-stone-900" href="catalogo.html">Accesorios</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-stone-900">Legal</h2>
+          <ul class="mt-4 space-y-2 text-sm text-stone-600">
+            <li><a class="hover:text-stone-900" href="index.html">Términos y condiciones</a></li>
+            <li><a class="hover:text-stone-900" href="index.html">Política de privacidad</a></li>
+            <li><a class="hover:text-stone-900" href="index.html">Sobre la marca</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-stone-900">Contacto</h2>
+          <ul class="mt-4 space-y-2 text-sm text-stone-600">
+            <li>Verline, 18 Rue des Étoffes, 75000 Lune-sur-Seine</li>
+            <li><a class="hover:text-stone-900" href="tel:+33000000000">+33 0 00 00 00 00</a></li>
+            <li><a class="hover:text-stone-900" href="mailto:bonjour@verline-mode.example">bonjour@verline-mode.example</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
