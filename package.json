@@ -1,0 +1,24 @@
+{
+  "name": "proyecto3_carolinak",
+  "version": "1.0.0",
+  "description": "The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caro-it/Proyecto3_CarolinaK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caro-it/Proyecto3_CarolinaK/issues"
+  },
+  "homepage": "https://github.com/Caro-it/Proyecto3_CarolinaK#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

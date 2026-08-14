@@ -1,41 +1,94 @@
-# HTML Hello
+Verline — Prototipo de tienda online
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Prototipo visual y responsive de e-commerce para una marca ficticia de ropa
+con sede en Francia. Proyecto realizado en el bootcamp de Ingeniería de IA
+de 4Geeks Academy.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+**Ver el prototipo:** [PEGAR AQUÍ LA URL DE GITHUB PAGES]
 
-## What to do next?
+---
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+## Vistas
+
+| Vista | Archivo | Contenido |
+|---|---|---|
+| Home | [index.html](./index.html) | Hero de campaña, nuevos lanzamientos y más vendidos |
+| Catálogo | [catalogo.html](./catalogo.html) | Filtros por categoría y talla, rejilla de 20 productos |
+| Producto | [producto.html](./producto.html) | Ficha a dos columnas y descripción detallada |
+| Carrito | [carrito.html](./carrito.html) | Listado de productos y resumen de totales |
+| Checkout | [pago.html](./pago.html) | Formulario de pago en tres pasos |
+
+Navbar y footer se reutilizan en las cinco vistas.
+
+---
+
+## Stack
+
+- **HTML5** semántico
+- **Tailwind CSS v4**, compilado con `@tailwindcss/cli`
+- **Schema.org** (JSON-LD): `Organization` en la home, `Product` en la ficha
+- **GitHub Pages** para el despliegue
+
+Se descartó el Play CDN de Tailwind: su propia documentación lo limita a
+entornos de desarrollo, y este prototipo se publica y se mide en producción.
+El CSS se compila a un archivo estático y se enlaza con `<link>`.
+
+---
+
+## Ejecutar en local
 
 ```bash
-$ pip3 install flask && python3 server.py
+npm install
+npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+Con el watch corriendo, abre `index.html` con Live Server (o cualquier
+servidor estático). El CSS se recompila al guardar.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+`dist/output.css` está versionado a propósito: GitHub Pages sirve archivos
+estáticos y no ejecuta ningún paso de build.
+
+---
+
+## Rendimiento
+
+![Resultado de PageSpeed Insights](./pagespeed-result.png)
+
+[UNA FRASE CON LA PUNTUACIÓN OBTENIDA, CUANDO LA MIDAS]
+
+---
+
+## Flujo de trabajo
+
+Proyecto individual. Se aplicó el flujo de ramas y pull requests que pide
+el enunciado; la revisión cruzada entre dos personas no aplica.
+
+- Una rama por vista: `feature/inicio`, `feature/catalogo`,
+  `feature/producto`, `feature/carrito`, `feature/pago`
+- Una pull request por rama, con descripción de los cambios
+- Commits por cambio lógico, con mensajes descriptivos en español
+- `main` reservada para el esqueleto compartido y los merges
+
+---
+
+## Estructura
+
+```
+.
+├── index.html
+├── catalogo.html
+├── producto.html
+├── carrito.html
+├── pago.html
+├── src/input.css
+├── dist/output.css
+├── docs/briefing.md
+├── pagespeed-result.png
+├── CLAUDE.md
+└── README.md
 ```
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+---
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
-
-### Contributors
-
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
-
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+Autora: Carolina ([@Caro-it](https://github.com/Caro-it))
+Bootcamp de Ingeniería de IA — 4Geeks Academy

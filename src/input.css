@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bosque: #2F4A3C;
+  --color-bosque-oscuro: #223729;
+}
