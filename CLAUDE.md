@@ -141,6 +141,15 @@ uno, hay que replicar el cambio en los cinco archivos.
 
 ---
 
+## Imágenes
+
+- No se usan imágenes reales. Los productos se representan con placeholders:
+  `<div class="aspect-[3/4] w-full bg-stone-200"></div>`
+- El hero usa un bloque de color de la paleta, no una foto.
+- Los placeholders son divs decorativos: no llevan alt ni role.
+
+---
+
 ## Fuente autoritativa
 
 El enunciado original y completo está en `docs/briefing.md`. Ante cualquier
