@@ -4,7 +4,7 @@ Prototipo visual y responsive de e-commerce para una marca ficticia de ropa
 con sede en Francia. Proyecto realizado en el bootcamp de Ingeniería de IA
 de 4Geeks Academy.
 
-**Ver el prototipo:** [PEGAR AQUÍ LA URL DE GITHUB PAGES]
+**Ver el prototipo:** https://caro-it.github.io/Proyecto3_CarolinaK/
 
 ---
 
@@ -54,7 +54,7 @@ estáticos y no ejecuta ningún paso de build.
 
 ![Resultado de PageSpeed Insights](./pagespeed-result.png)
 
-[UNA FRASE CON LA PUNTUACIÓN OBTENIDA, CUANDO LA MIDAS]
+100/100 en rendimiento, accesibilidad, prácticas recomendadas y SEO, medido en móvil sobre la URL pública.
 
 ---
 
