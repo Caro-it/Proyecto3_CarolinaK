@@ -29,8 +29,115 @@
         </div>
       </nav>
     </header>
-    <main class="mx-auto max-w-3xl px-4 py-12">
+    <main class="mx-auto max-w-6xl px-4 py-12">
       <h1 class="text-2xl font-bold sm:text-3xl">Carrito</h1>
+
+      <section aria-labelledby="listado-carrito" class="mt-8">
+        <h2 class="sr-only" id="listado-carrito">Productos añadidos</h2>
+
+        <div class="space-y-4">
+          <article class="rounded-2xl border border-stone-200 bg-white p-4">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start gap-4 md:w-[38%]">
+                <div class="aspect-[3/4] w-16 shrink-0 rounded-lg bg-stone-200"></div>
+                <div>
+                  <h3 class="text-sm font-semibold text-stone-900">Blazer Lino Arc</h3>
+                  <p class="mt-1 text-sm text-stone-600">Talla M</p>
+                </div>
+              </div>
+
+              <p class="text-sm text-stone-700 md:w-[16%] md:text-center">129,00 €</p>
+
+              <div class="md:w-[22%]">
+                <label class="text-sm font-medium text-stone-800" for="cantidad-blazer">Cantidad</label>
+                <select class="mt-1 w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="cantidad-blazer" name="cantidad-blazer">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <p class="text-sm font-semibold text-stone-900 md:w-[16%] md:text-right">129,00 €</p>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-stone-200 bg-white p-4">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start gap-4 md:w-[38%]">
+                <div class="aspect-[3/4] w-16 shrink-0 rounded-lg bg-stone-200"></div>
+                <div>
+                  <h3 class="text-sm font-semibold text-stone-900">Camisa Popelina Ciel</h3>
+                  <p class="mt-1 text-sm text-stone-600">Talla L</p>
+                </div>
+              </div>
+
+              <p class="text-sm text-stone-700 md:w-[16%] md:text-center">64,00 €</p>
+
+              <div class="md:w-[22%]">
+                <label class="text-sm font-medium text-stone-800" for="cantidad-camisa">Cantidad</label>
+                <select class="mt-1 w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="cantidad-camisa" name="cantidad-camisa">
+                  <option value="1">1</option>
+                  <option selected value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <p class="text-sm font-semibold text-stone-900 md:w-[16%] md:text-right">128,00 €</p>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-stone-200 bg-white p-4">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start gap-4 md:w-[38%]">
+                <div class="aspect-[3/4] w-16 shrink-0 rounded-lg bg-stone-200"></div>
+                <div>
+                  <h3 class="text-sm font-semibold text-stone-900">Sneaker Urbana Lueur</h3>
+                  <p class="mt-1 text-sm text-stone-600">Talla 42</p>
+                </div>
+              </div>
+
+              <p class="text-sm text-stone-700 md:w-[16%] md:text-center">99,00 €</p>
+
+              <div class="md:w-[22%]">
+                <label class="text-sm font-medium text-stone-800" for="cantidad-sneaker">Cantidad</label>
+                <select class="mt-1 w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="cantidad-sneaker" name="cantidad-sneaker">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <p class="text-sm font-semibold text-stone-900 md:w-[16%] md:text-right">99,00 €</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="resumen-compra" class="mt-10 md:ml-auto md:max-w-sm">
+        <h2 class="text-lg font-semibold text-stone-900" id="resumen-compra">Resumen</h2>
+        <div class="mt-4 rounded-2xl border border-stone-200 bg-stone-50 p-5">
+          <dl class="space-y-3 text-sm text-stone-700">
+            <div class="flex items-center justify-between">
+              <dt>Subtotal</dt>
+              <dd class="font-medium text-stone-900">356,00 €</dd>
+            </div>
+            <div class="flex items-center justify-between">
+              <dt>IVA (20%)</dt>
+              <dd class="font-medium text-stone-900">71,20 €</dd>
+            </div>
+            <div class="border-t border-stone-200 pt-3">
+              <div class="flex items-center justify-between">
+                <dt class="text-base font-semibold text-stone-900">Total</dt>
+                <dd class="text-base font-semibold text-stone-900">427,20 €</dd>
+              </div>
+            </div>
+          </dl>
+
+          <a class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-emerald-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-900 focus:ring-offset-2" href="pago.html">
+            Comprar
+          </a>
+        </div>
+      </section>
     </main>
     <footer class="border-t border-stone-200 bg-stone-50">
       <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
