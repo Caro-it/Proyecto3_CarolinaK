@@ -29,8 +29,92 @@
         </div>
       </nav>
     </header>
-    <main class="mx-auto max-w-3xl px-4 py-12">
-      <h1 class="text-2xl font-bold sm:text-3xl">Pago</h1>
+    <main class="mx-auto max-w-4xl px-4 py-12">
+      <h1 class="text-2xl font-bold sm:text-3xl">Checkout</h1>
+
+      <form action="#" class="mt-8 space-y-8" method="post">
+        <section aria-labelledby="paso-1-titulo" class="rounded-2xl border border-stone-200 bg-stone-50 p-5 sm:p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white">1</span>
+            <h2 class="text-lg font-semibold text-stone-900" id="paso-1-titulo">Datos personales</h2>
+          </div>
+
+          <div class="mt-5 grid gap-4 md:grid-cols-2">
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="nombre">Nombre</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="nombre" name="nombre" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="apellidos">Apellidos</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="apellidos" name="apellidos" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="email">Email</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="email" name="email" type="email">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="telefono">Telefono</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="telefono" name="telefono" type="tel">
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="paso-2-titulo" class="rounded-2xl border border-stone-200 bg-stone-50 p-5 sm:p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white">2</span>
+            <h2 class="text-lg font-semibold text-stone-900" id="paso-2-titulo">Direccion de entrega</h2>
+          </div>
+
+          <div class="mt-5 grid gap-4 md:grid-cols-2">
+            <div class="space-y-2 md:col-span-2">
+              <label class="text-sm font-medium text-stone-800" for="calle">Calle</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="calle" name="calle" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="ciudad">Ciudad</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="ciudad" name="ciudad" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="codigo-postal">Codigo postal</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="codigo-postal" name="codigo-postal" type="text">
+            </div>
+            <div class="space-y-2 md:col-span-2">
+              <label class="text-sm font-medium text-stone-800" for="pais">Pais</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="pais" name="pais" type="text">
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="paso-3-titulo" class="rounded-2xl border border-stone-200 bg-stone-50 p-5 sm:p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white">3</span>
+            <h2 class="text-lg font-semibold text-stone-900" id="paso-3-titulo">Pago con tarjeta</h2>
+          </div>
+
+          <div class="mt-5 grid gap-4 md:grid-cols-2">
+            <div class="space-y-2 md:col-span-2">
+              <label class="text-sm font-medium text-stone-800" for="titular">Titular</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="titular" name="titular" type="text">
+            </div>
+            <div class="space-y-2 md:col-span-2">
+              <label class="text-sm font-medium text-stone-800" for="numero-tarjeta">Numero</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="numero-tarjeta" name="numero-tarjeta" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="caducidad">Caducidad</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="caducidad" name="caducidad" placeholder="MM/AA" type="text">
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-stone-800" for="cvv">CVV</label>
+              <input class="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-400 focus:outline-none" id="cvv" name="cvv" type="text">
+            </div>
+          </div>
+        </section>
+
+        <button class="w-full rounded-xl bg-emerald-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-900 focus:ring-offset-2" type="submit">
+          Confirmar pedido
+        </button>
+      </form>
     </main>
     <footer class="border-t border-stone-200 bg-stone-50">
       <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
